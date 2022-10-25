@@ -23,7 +23,7 @@ Rizaldi Sempat Jadi 'Pak Ogah' Usai Bunuh Anak Perempuan Pulang Ngaji
 detikNews | 1 jam yang lalu
     :return:
     """
-    hasil = dict()
+    hasil = dict()  # perintah/cara lain agar otomatis mengubah menjadi tipe data dictionary
     hasil['pertama'] = {
         'isi': 'Tangis Vera Saat Ungkap Yosua Curhat Masalah yang Ditanggung Sendiri',
         'diupload': '1 jam yang lalu'
@@ -49,7 +49,6 @@ detikNews | 1 jam yang lalu
 
 
 def tampilkan_data(result):
-    print("Berita Terpopuler dan Terkini Detikcom\n")
     print(f"#1. {result['pertama']['isi']}. \n   Diupload {result['pertama']['diupload']}")
     print(f"#2. {result['kedua']['isi']}. \n   Diupload {result['kedua']['diupload']}")
     print(f"#3. {result['ketiga']['isi']}. \n   Diupload {result['ketiga']['diupload']}")
@@ -57,7 +56,7 @@ def tampilkan_data(result):
     print(f"#5. {result['kelima']['isi']}. \n   Diupload {result['kelima']['diupload']}")
 
 
-if __name__ == "__main__":
-    print('Aplikasi Utama')
+if __name__ == "__main__":  # -> kode hanya akan di eksekusi jika sebagai module utama bukan dari perintah import
+    print("Berita Terpopuler dan Terkini Detik.com\n")
     result = ekstraksi_data()
     tampilkan_data(result)
