@@ -47,7 +47,8 @@ detikNews | 1 jam yang lalu
 
     return hasil
 
-def tampilka_data(result):
+
+def tampilkan_data(result):
     print("Berita Terpopuler dan Terkini Detikcom\n")
     print(f"#1. {result['pertama']['isi']}. \n   Diupload {result['pertama']['diupload']}")
     print(f"#2. {result['kedua']['isi']}. \n   Diupload {result['kedua']['diupload']}")
@@ -59,4 +60,4 @@ def tampilka_data(result):
 if __name__ == "__main__":
     print('Aplikasi Utama')
     result = ekstraksi_data()
-    tampilka_data(result)
+    tampilkan_data(result)
