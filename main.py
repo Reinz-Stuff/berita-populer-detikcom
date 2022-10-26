@@ -5,9 +5,10 @@ Aplikasi Berita Terpopuler Detikcom
 import beritaterkini
 
 if __name__ == "__main__":  # -> kode hanya akan di eksekusi jika sebagai module utama bukan dari perintah import
-    print("Berita Terpopuler dan Terkini Detik.com\n")
+    print("Berita Terpopuler dan Terkini Detik.com")
     result = beritaterkini.ekstraksi_data()
     beritaterkini.tampilkan_data(result)
+
 
 # Alternatif
 # cara ini kurang, kita tidak tahu ektraksi data dari package yang mana
