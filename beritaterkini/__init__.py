@@ -45,8 +45,3 @@ def tampilkan_data(result):
     print(f"#4. {result['fourth_news']}.")
     print(f"#5. {result['fifth_news']}.")
 
-
-if __name__ == "__main__":
-    print(" Detikcom - Informasi Berita Terkini dan Terpopuler Hari Ini")
-    result = ekstraksi_data()
-    tampilkan_data(result)
