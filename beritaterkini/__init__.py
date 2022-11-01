@@ -26,21 +26,11 @@ def ekstraksi_data():
         fifth_news = fifth_news.text.strip()
 
         hasil = dict()
-        hasil['first_news'] = {
-            'isi': first_news
-        }
-        hasil['second_news'] = {
-            'isi': second_news
-        }
-        hasil['third_news'] = {
-            'isi': third_news
-        }
-        hasil['fourth_news'] = {
-            'isi': fourth_news
-        }
-        hasil['fifth_news'] = {
-            'isi': fifth_news
-        }
+        hasil['first_news'] = first_news
+        hasil['second_news'] = second_news
+        hasil['third_news'] = third_news
+        hasil['fourth_news'] = fourth_news
+        hasil['fifth_news'] = fifth_news
 
         return hasil
 
@@ -49,11 +39,11 @@ def tampilkan_data(result):
     if result is None:
         print('Tidak dapat menemukan data berita terkini')
         return None
-    print(f"#1. {result['first_news']['isi']}.")
-    print(f"#2. {result['second_news']['isi']}.")
-    print(f"#3. {result['third_news']['isi']}.")
-    print(f"#4. {result['fourth_news']['isi']}.")
-    print(f"#5. {result['fifth_news']['isi']}.")
+    print(f"#1. {result['first_news']}.")
+    print(f"#2. {result['second_news']}.")
+    print(f"#3. {result['third_news']}.")
+    print(f"#4. {result['fourth_news']}.")
+    print(f"#5. {result['fifth_news']}.")
 
 
 if __name__ == "__main__":
