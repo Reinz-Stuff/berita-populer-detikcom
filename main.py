@@ -2,12 +2,12 @@
 Aplikasi Berita Terpopuler Detikcom
 """
 
-import beritaterkini
+import beritapopuler
 
 if __name__ == "__main__":  # -> kode hanya akan di eksekusi jika sebagai module utama bukan dari perintah import
     print("detikcom - Informasi Berita Terkini dan Terpopuler Hari Ini")
-    result = beritaterkini.ekstraksi_data()
-    beritaterkini.tampilkan_data(result)
+    result = beritapopuler.ekstraksi_data()
+    beritapopuler.tampilkan_data(result)
 
 
 # Alternatif
